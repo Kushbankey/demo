@@ -1,0 +1,31 @@
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    background-color:  #292929;
+    color: #fff;
+    border: 5px solid grey;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.2s;
+    cursor: pointer;
+    width: 200px; 
+    height: 150px;
+
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+.floor{
+   color :  #FF7E7E;
+}
