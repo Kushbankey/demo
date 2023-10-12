@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/washroom.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <h1>Washroom 1</h1>
+    <div class="card1">
+        <h2 class="floor">Male</h2>
+        <img src="images/male.png">
+
+    </div>
+
+    <div class="card1">
+        <h2 class="floor">Female</h2>
+        <img src="images/female.png">
+
+    </div>
+    <div class="img">
+        <div class="content">
+            <!-- card -->
+            <div class="card">
+
+                <div class="icon" id="icon"><img src="images/camera.png" alt="camera"></div>
+                <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-file" style="display: none;">
+                
+                <p class="title">Code: 01</p>
+                <p class="text">Click to see or edit your profile page.</p>
+
+            </div>
+            <!-- end card -->
+            <!-- card -->
+            <div class="card">
+
+                <div class="icon"><img src="images/camera.png" alt="camera"></div>
+                <p class="title">Code: 02</p>
+                <p class="text">Check all your favourites in one place.</p>
+
+            </div>
+            <!-- end card -->
+            <!-- card -->
+            <div class="card">
+
+                <div class="icon"><img src="images/camera.png" alt="camera"></div>
+                <p class="title">Code: 03</p>
+                <p class="text">Add or change your contacts and links.</p>
+
+            </div>
+            <!-- end card -->
+            <!-- card -->
+            <div class="card">
+
+                <div class="icon"><img src="images/camera.png" alt="camera"></div>
+                <p class="title">Code: 04</p>
+                <p class="text">Add or change your contacts and links.</p>
+
+            </div>
+            <!-- end card -->
+
+
+        </div>
+
+        <div class="content">
+            <!-- card -->
+            <div class="card">
+
+                <div class="icon"><img src="images/camera.png" alt="camera"></div>
+                <p class="title">Code: 11</p>
+                <p class="text">Click to see or edit your profile page.</p>
+
+            </div>
+            <!-- end card -->
+            <!-- card -->
+            <div class="card">
+
+                <div class="icon"><img src="images/camera.png" alt="camera">
+                </div>
+                <p class="title">Code: 12</p>
+                <p class="text">Check all your favourites in one place.</p>
+
+            </div>
+            <!-- end card -->
+            <!-- card -->
+            <div class="card">
+
+                <div class="icon"><img src="images/camera.png" alt="camera"></div>
+                <p class="title">Code: 13</p>
+                <p class="text">Add or change your contacts and links.</p>
+
+            </div>
+            <!-- end card -->
+            <!-- card -->
+            <div class="card">
+
+                <div class="icon"><img src="images/camera.png" alt="camera"></div>
+                <p class="title">Code: 14</p>
+                <p class="text">Add or change your contacts and links.</p>
+
+            </div>
+            <!-- end card -->
+
+
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $(".card1").on("click", () => {
+                $(".card1").css("display", "none");
+                $(".img").css("display", "block");
+            });
+        });
+        $(document).ready(function () {
+    $("#icon").on("click", function () {
+        $("#input-file").click();
+    });
+
+    // Handle file input change
+    $("#input-file").on("change", function () {
+        // You can add code here to handle the selected file
+        // For example, you can display the selected file name
+        const fileName = $(this).val().split("\\").pop();
+        alert("Selected file: " + fileName);
+    });
+});
+
+    </script>
+
+</body>
+
+</html>
